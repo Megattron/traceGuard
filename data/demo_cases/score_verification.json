@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "basis": "v0.2 rule tiers with the existing browser scoring engine; feature SQL verified separately",
+  "results": [
+    {
+      "scenario": "demo_download",
+      "anomaly": 75,
+      "suspicion": 75,
+      "status": "PASS"
+    },
+    {
+      "scenario": "demo_shared",
+      "anomaly": 50,
+      "suspicion": 50,
+      "status": "PASS"
+    },
+    {
+      "scenario": "demo_sustained",
+      "anomaly": 15,
+      "suspicion": 0,
+      "status": "PASS"
+    }
+  ]
+}

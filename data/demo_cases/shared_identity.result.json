@@ -1,0 +1,181 @@
+{
+  "meta": [
+    {
+      "name": "feature_group",
+      "type": "String"
+    },
+    {
+      "name": "run_id",
+      "type": "String"
+    },
+    {
+      "name": "user_id",
+      "type": "String"
+    },
+    {
+      "name": "scenario_id",
+      "type": "String"
+    },
+    {
+      "name": "subject_type",
+      "type": "String"
+    },
+    {
+      "name": "subject_id",
+      "type": "Nullable(String)"
+    },
+    {
+      "name": "window_start",
+      "type": "DateTime64(3)"
+    },
+    {
+      "name": "window_end",
+      "type": "DateTime64(3)"
+    },
+    {
+      "name": "observed_event_count",
+      "type": "UInt64"
+    },
+    {
+      "name": "unknown_env_count",
+      "type": "UInt64"
+    },
+    {
+      "name": "unknown_ua_count",
+      "type": "UInt64"
+    },
+    {
+      "name": "subject_ip_count_obs",
+      "type": "Nullable(UInt64)"
+    },
+    {
+      "name": "ua_class_count_obs",
+      "type": "Nullable(UInt64)"
+    },
+    {
+      "name": "env_count_obs",
+      "type": "Nullable(UInt64)"
+    },
+    {
+      "name": "env_transition_count",
+      "type": "Nullable(UInt64)"
+    },
+    {
+      "name": "env_transition_gap_ms",
+      "type": "Array(Int64)"
+    },
+    {
+      "name": "region_count_obs",
+      "type": "Nullable(UInt64)"
+    },
+    {
+      "name": "isp_count_obs",
+      "type": "Nullable(UInt64)"
+    },
+    {
+      "name": "ip_enriched_event_count",
+      "type": "UInt64"
+    },
+    {
+      "name": "ip_enrichment_status",
+      "type": "String"
+    },
+    {
+      "name": "timestamp_tie_group_count",
+      "type": "UInt32"
+    },
+    {
+      "name": "identity_bases",
+      "type": "Array(String)"
+    },
+    {
+      "name": "compute_status",
+      "type": "String"
+    },
+    {
+      "name": "reason_code",
+      "type": "String"
+    },
+    {
+      "name": "value_kind",
+      "type": "String"
+    }
+  ],
+  "data": [
+    {
+      "feature_group": "TG-F07",
+      "run_id": "tg_demo_cases_20261023_v1",
+      "user_id": "980107c0ab",
+      "scenario_id": "demo_shared",
+      "subject_type": "VIEWER",
+      "subject_id": "sim_demo_shared_viewer",
+      "window_start": "2026-10-23 13:00:00.000",
+      "window_end": "2026-10-23 13:10:00.000",
+      "observed_event_count": 40,
+      "unknown_env_count": 0,
+      "unknown_ua_count": 0,
+      "subject_ip_count_obs": 2,
+      "ua_class_count_obs": 2,
+      "env_count_obs": 2,
+      "env_transition_count": 39,
+      "env_transition_gap_ms": [
+        5000,
+        5000,
+        5000,
+        5000,
+        5000,
+        5000,
+        5000,
+        5000,
+        5000,
+        5000,
+        5000,
+        5000,
+        5000,
+        5000,
+        5000,
+        5000,
+        5000,
+        5000,
+        5000,
+        5000,
+        5000,
+        5000,
+        5000,
+        5000,
+        5000,
+        5000,
+        5000,
+        5000,
+        5000,
+        5000,
+        5000,
+        5000,
+        5000,
+        5000,
+        5000,
+        5000,
+        5000,
+        5000,
+        5000
+      ],
+      "region_count_obs": 1,
+      "isp_count_obs": 1,
+      "ip_enriched_event_count": 40,
+      "ip_enrichment_status": "AVAILABLE",
+      "timestamp_tie_group_count": 0,
+      "identity_bases": [
+        "AUTHENTICATED_VIEWER"
+      ],
+      "compute_status": "AVAILABLE",
+      "reason_code": "",
+      "value_kind": "OBSERVED"
+    }
+  ],
+  "rows": 1,
+  "statistics": {
+    "elapsed": 7.218629866,
+    "rows_read": 2318450,
+    "bytes_read": 1008426957
+  }
+}

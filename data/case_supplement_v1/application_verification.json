@@ -1,0 +1,149 @@
+{
+  "status": "PASS",
+  "run_id": "tg_980107c0ab_20261016_20261023_v1",
+  "storage": "isolated in-memory SQLite; existing application configuration unchanged",
+  "results": [
+    {
+      "scenario": "rapid_pull",
+      "time": "12:00",
+      "status": "PASS",
+      "features": [
+        {
+          "rule": "R10",
+          "A": 15,
+          "S": 0,
+          "reason": "",
+          "metrics": {
+            "toolRequests": 723,
+            "toolStages": 3
+          }
+        },
+        {
+          "rule": "R2",
+          "A": 50,
+          "S": null,
+          "reason": "BUSINESS_DOWNLOAD_POLICY_UNVERIFIED",
+          "metrics": {
+            "contentSeconds": 7200,
+            "speedRatio": 12
+          }
+        },
+        {
+          "rule": "R4B",
+          "A": 0,
+          "S": 0,
+          "reason": "",
+          "metrics": {
+            "generalEnvironments": 1,
+            "attentionEnvironments": 1,
+            "attentionPairs": 0,
+            "highPairs": 0
+          }
+        },
+        {
+          "rule": "R6",
+          "A": 15,
+          "S": 0,
+          "reason": "",
+          "metrics": {
+            "uniqueSegments": 720,
+            "coverage": 1,
+            "monotonic": 1,
+            "intervalCv": 0
+          }
+        },
+        {
+          "rule": "R8",
+          "A": 0,
+          "S": 0,
+          "reason": "",
+          "metrics": {
+            "activeMinutes": 2,
+            "contentSeconds": 7200
+          }
+        }
+      ],
+      "evidenceDetails": 3
+    },
+    {
+      "scenario": "token_shared",
+      "time": "13:00",
+      "status": "PASS",
+      "features": [
+        {
+          "rule": "R10",
+          "A": 0,
+          "S": 0,
+          "reason": "",
+          "metrics": {
+            "toolRequests": 0,
+            "toolStages": 0
+          }
+        },
+        {
+          "rule": "R2",
+          "A": 0,
+          "S": 0,
+          "reason": "",
+          "metrics": {
+            "contentSeconds": 400,
+            "speedRatio": 0.6666666666666666
+          }
+        },
+        {
+          "rule": "R4B",
+          "A": 50,
+          "S": null,
+          "reason": "BUSINESS_SHARING_POLICY_UNVERIFIED",
+          "metrics": {
+            "generalEnvironments": 2,
+            "attentionEnvironments": 2,
+            "attentionPairs": 1,
+            "highPairs": 1
+          }
+        },
+        {
+          "rule": "R6",
+          "A": 0,
+          "S": 0,
+          "reason": "",
+          "metrics": {
+            "uniqueSegments": 40,
+            "coverage": 0.05555555555555555,
+            "monotonic": 1,
+            "intervalCv": 0
+          }
+        },
+        {
+          "rule": "R8",
+          "A": 0,
+          "S": 0,
+          "reason": "",
+          "metrics": {
+            "activeMinutes": 4,
+            "contentSeconds": 400
+          }
+        }
+      ],
+      "evidenceDetails": 1
+    },
+    {
+      "scenario": "sustained_access",
+      "time": "23:50",
+      "status": "PASS",
+      "features": [
+        {
+          "rule": "R8",
+          "A": 15,
+          "S": 0,
+          "reason": "",
+          "metrics": {
+            "activeMinutes": 960,
+            "contentSeconds": 57600
+          }
+        }
+      ],
+      "evidenceDetails": 1
+    }
+  ]
+}

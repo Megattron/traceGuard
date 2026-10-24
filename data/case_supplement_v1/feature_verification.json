@@ -1,0 +1,80 @@
+{
+  "run_id": "tg_980107c0ab_20261016_20261023_v1",
+  "status": "PASS",
+  "passed": 9,
+  "cases": 9,
+  "results": [
+    {
+      "case": "download_chain",
+      "feature_group": "TG-F02",
+      "scenario_id": "rapid_pull",
+      "status": "PASS",
+      "differences": {},
+      "sql_sha256": "7c435bfa389d1d05800f75abcd93c1c1a6124fbd9c0fd5bb79b96ff897ffe776"
+    },
+    {
+      "case": "download_content",
+      "feature_group": "TG-F03",
+      "scenario_id": "rapid_pull",
+      "status": "PASS",
+      "differences": {},
+      "sql_sha256": "85ca0a6288ebd0ca3308c896c54e6c587b358892f49c291fdcbf5975c8a4a52d"
+    },
+    {
+      "case": "download_sequence",
+      "feature_group": "TG-F08",
+      "scenario_id": "rapid_pull",
+      "status": "PASS",
+      "differences": {},
+      "sql_sha256": "36004c9babfa3b5e5fe4182842e7eb2c7331b75edce44ebf1599e601a0d6bcf5"
+    },
+    {
+      "case": "download_tool",
+      "feature_group": "TG-F12",
+      "scenario_id": "rapid_pull",
+      "status": "PASS",
+      "differences": {},
+      "sql_sha256": "103493d861072a5174833e7aff2d5b16afb909c1aa699fff198f69bff9b91640"
+    },
+    {
+      "case": "shared_environments",
+      "feature_group": "TG-F06",
+      "scenario_id": "token_shared",
+      "status": "PASS",
+      "differences": {},
+      "sql_sha256": "b64c769d7aca0b506d6a4c4ab24a3cb7d9dbc85d41796ac8a5e634c21eb3c40d"
+    },
+    {
+      "case": "shared_validity",
+      "feature_group": "TG-F05",
+      "scenario_id": "token_shared",
+      "status": "PASS",
+      "differences": {},
+      "sql_sha256": "ba1cd4e7247cedcd76a6996ce615c2c02a01809d92112431fa7bfbc8323e0fef"
+    },
+    {
+      "case": "shared_identity",
+      "feature_group": "TG-F07",
+      "scenario_id": "token_shared",
+      "status": "PASS",
+      "differences": {},
+      "sql_sha256": "cacd8269a2037db57cea7c809c234dc4678160336f8ed3fa6bad3f8c69f15185"
+    },
+    {
+      "case": "sustained_content",
+      "feature_group": "TG-F10",
+      "scenario_id": "sustained_access",
+      "status": "PASS",
+      "differences": {},
+      "sql_sha256": "2e6a9c4ac814d2f1d23667e08aa5765e702b353bb2bf0016ee916f54943b225a"
+    },
+    {
+      "case": "sustained_playback",
+      "feature_group": "TG-F04",
+      "scenario_id": "sustained_access",
+      "status": "PASS",
+      "differences": {},
+      "sql_sha256": "f75427ba22479b330f28b15da17c98887c6dc8ff71b242d091ab0aa7450d3eba"
+    }
+  ]
+}

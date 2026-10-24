@@ -1,0 +1,23 @@
+{
+  "run_id": "tg_980107c0ab_20261016_20261023_v1",
+  "files": {
+    "media_segments.demo.jsonl.gz": {
+      "sha256": "a7c7775e4d954cb54c3b7ec9c17078cf7ab1443f40a048e9ba78a2cbb1d8f361",
+      "batches": 2,
+      "complete": true,
+      "rows": 6520
+    },
+    "token_snapshots.demo.jsonl.gz": {
+      "sha256": "fd9d1e89b6d43a1dfedfd0b05fca6b61732cf07fc4959e7abfe9cb3b5986db8e",
+      "batches": 1,
+      "complete": true,
+      "rows": 10
+    },
+    "events.demo.jsonl.gz": {
+      "sha256": "ab86a8836901982136f693471ce625bf72afac895eb27bbfb8aaf3cde498bf4b",
+      "batches": 3,
+      "complete": true,
+      "rows": 14018
+    }
+  }
+}

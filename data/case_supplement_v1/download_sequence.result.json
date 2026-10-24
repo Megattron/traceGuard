@@ -1,0 +1,250 @@
+{
+  "meta": [
+    {
+      "name": "run_id",
+      "type": "String"
+    },
+    {
+      "name": "user_id",
+      "type": "String"
+    },
+    {
+      "name": "scenario_id",
+      "type": "String"
+    },
+    {
+      "name": "subject_type",
+      "type": "String"
+    },
+    {
+      "name": "subject_id",
+      "type": "Nullable(String)"
+    },
+    {
+      "name": "video_id",
+      "type": "String"
+    },
+    {
+      "name": "session_context",
+      "type": "String"
+    },
+    {
+      "name": "resource_version",
+      "type": "Nullable(String)"
+    },
+    {
+      "name": "playlist_ref",
+      "type": "Nullable(String)"
+    },
+    {
+      "name": "rendition_ref",
+      "type": "Nullable(String)"
+    },
+    {
+      "name": "track_type",
+      "type": "LowCardinality(Nullable(String))"
+    },
+    {
+      "name": "source",
+      "type": "LowCardinality(String)"
+    },
+    {
+      "name": "sampling_method",
+      "type": "LowCardinality(String)"
+    },
+    {
+      "name": "sampling_unit",
+      "type": "LowCardinality(String)"
+    },
+    {
+      "name": "sampling_rate",
+      "type": "Nullable(Float64)"
+    },
+    {
+      "name": "window_start",
+      "type": "DateTime64(3)"
+    },
+    {
+      "name": "window_end",
+      "type": "DateTime64(3)"
+    },
+    {
+      "name": "compute_status",
+      "type": "String"
+    },
+    {
+      "name": "reason_code",
+      "type": "String"
+    },
+    {
+      "name": "value_kind",
+      "type": "String"
+    },
+    {
+      "name": "observed_event_count",
+      "type": "UInt64"
+    },
+    {
+      "name": "manifest_unknown_count",
+      "type": "UInt64"
+    },
+    {
+      "name": "unique_segment_count_obs",
+      "type": "UInt64"
+    },
+    {
+      "name": "total_segments",
+      "type": "Nullable(UInt32)"
+    },
+    {
+      "name": "coverage_ratio_obs",
+      "type": "Nullable(Float64)"
+    },
+    {
+      "name": "coverage_status",
+      "type": "String"
+    },
+    {
+      "name": "coverage_value_kind",
+      "type": "String"
+    },
+    {
+      "name": "valid_order_pair_count",
+      "type": "UInt32"
+    },
+    {
+      "name": "order_unknown_pair_count",
+      "type": "UInt32"
+    },
+    {
+      "name": "timestamp_tie_count",
+      "type": "UInt64"
+    },
+    {
+      "name": "monotonic_ratio_obs",
+      "type": "Nullable(Float64)"
+    },
+    {
+      "name": "monotonic_ratio_status",
+      "type": "String"
+    },
+    {
+      "name": "unknown_segment_index_count",
+      "type": "UInt32"
+    },
+    {
+      "name": "repeat_segment_count",
+      "type": "Int64"
+    },
+    {
+      "name": "backward_step_count",
+      "type": "UInt32"
+    },
+    {
+      "name": "request_gap_mean_ms",
+      "type": "Nullable(Float64)"
+    },
+    {
+      "name": "request_gap_std_ms",
+      "type": "Nullable(Float64)"
+    },
+    {
+      "name": "interval_cv_obs",
+      "type": "Nullable(Float64)"
+    },
+    {
+      "name": "interval_cv_status",
+      "type": "String"
+    }
+  ],
+  "data": [
+    {
+      "run_id": "tg_980107c0ab_20261016_20261023_v1",
+      "user_id": "980107c0ab",
+      "scenario_id": "rapid_pull",
+      "subject_type": "VIEWER",
+      "subject_id": "sim_rapid_pull_20261023_viewer",
+      "video_id": "980107c0ab13a59d4e822e271b3ccdd6",
+      "session_context": "SESSION:sim_rapid_pull_20261023_session",
+      "resource_version": "sim_resource_v1",
+      "playlist_ref": "sim_playlist_980107c0ab13a59d4e822e271b3ccdd6_1080",
+      "rendition_ref": "1080p",
+      "track_type": "VIDEO",
+      "source": "SIMULATOR",
+      "sampling_method": "CENSUS",
+      "sampling_unit": "AUTH_EVENT",
+      "sampling_rate": 1,
+      "window_start": "2026-10-23 12:00:00.000",
+      "window_end": "2026-10-23 12:10:00.000",
+      "compute_status": "AVAILABLE",
+      "reason_code": "",
+      "value_kind": "OBSERVED",
+      "observed_event_count": 720,
+      "manifest_unknown_count": 0,
+      "unique_segment_count_obs": 720,
+      "total_segments": 720,
+      "coverage_ratio_obs": 1,
+      "coverage_status": "AVAILABLE",
+      "coverage_value_kind": "LOWER_BOUND",
+      "valid_order_pair_count": 719,
+      "order_unknown_pair_count": 0,
+      "timestamp_tie_count": 0,
+      "monotonic_ratio_obs": 1,
+      "monotonic_ratio_status": "AVAILABLE",
+      "unknown_segment_index_count": 0,
+      "repeat_segment_count": 0,
+      "backward_step_count": 0,
+      "request_gap_mean_ms": 100,
+      "request_gap_std_ms": 0,
+      "interval_cv_obs": 0,
+      "interval_cv_status": "AVAILABLE"
+    },
+    {
+      "run_id": "tg_980107c0ab_20261016_20261023_v1",
+      "user_id": "980107c0ab",
+      "scenario_id": "rapid_pull",
+      "subject_type": "VIEWER",
+      "subject_id": "sim_rapid_pull_case_supplement_viewer",
+      "video_id": "sim_course_01",
+      "session_context": "SESSION:tg_980107c0ab_20261016_20261023_v1:case_supplement_v1:rapid_pull:1:session",
+      "resource_version": "demo_resource_v1",
+      "playlist_ref": "sim_course_01:playlist",
+      "rendition_ref": "1080p",
+      "track_type": "VIDEO",
+      "source": "SIMULATOR",
+      "sampling_method": "CENSUS",
+      "sampling_unit": "AUTH_EVENT",
+      "sampling_rate": 1,
+      "window_start": "2026-10-23 12:00:00.000",
+      "window_end": "2026-10-23 12:10:00.000",
+      "compute_status": "AVAILABLE",
+      "reason_code": "",
+      "value_kind": "OBSERVED",
+      "observed_event_count": 720,
+      "manifest_unknown_count": 0,
+      "unique_segment_count_obs": 720,
+      "total_segments": 720,
+      "coverage_ratio_obs": 1,
+      "coverage_status": "AVAILABLE",
+      "coverage_value_kind": "LOWER_BOUND",
+      "valid_order_pair_count": 719,
+      "order_unknown_pair_count": 0,
+      "timestamp_tie_count": 0,
+      "monotonic_ratio_obs": 1,
+      "monotonic_ratio_status": "AVAILABLE",
+      "unknown_segment_index_count": 0,
+      "repeat_segment_count": 0,
+      "backward_step_count": 0,
+      "request_gap_mean_ms": 100,
+      "request_gap_std_ms": 0,
+      "interval_cv_obs": 0,
+      "interval_cv_status": "AVAILABLE"
+    }
+  ],
+  "rows": 2,
+  "statistics": {
+    "elapsed": 4.190687043,
+    "rows_read": 1193780,
+    "bytes_read": 517827585
+  }
+}

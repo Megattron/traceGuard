@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="TraceGuard 视频访问风险监控：检测异常、查看证据、人工复核。">
+  <title>TraceGuard · 视频访问风险监控</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/reports.css">
+  <link rel="stylesheet" href="/replay.css">
+  <script type="module" src="/app.js"></script>
+</head>
+<body>
+  <header class="header">
+    <a class="brand" href="#overview" aria-label="TraceGuard 首页"><span class="brand-mark">T</span><span>TraceGuard<small>视频内容安全工作台</small></span></a>
+    <nav aria-label="主导航"><button data-nav="overview" class="active">风险总览</button><button data-nav="alerts">告警中心</button><button data-nav="rule">规则配置</button><button data-nav="reports">取证报告</button></nav>
+    <div class="operator"><span class="live-dot"></span><span>本地工作空间</span><span class="avatar" aria-label="风控运营">运</span></div>
+  </header>
+  <div class="source-band" id="source-band">正在连接工作空间…</div>
+  <main id="app" aria-live="polite"><div class="loading">正在读取检测与告警记录…</div></main>
+  <footer><span>TraceGuard <span class="footer-divider">/</span> 从异常信号到复核证据</span><span>规则配置 v0.2 · 北京时间</span></footer>
+  <dialog id="detect-dialog" aria-labelledby="detect-title">
+    <form id="detect-form">
+      <div class="dialog-heading"><div><span class="eyebrow">NEW DETECTION</span><h2 id="detect-title">运行一次检测</h2></div><button type="button" class="icon-button" data-close="detect-dialog" aria-label="关闭检测面板">×</button></div>
+      <div class="dialog-body">
+        <p class="muted">各规则采用自身窗口：R3 为 5 分钟，R4A 为 30 分钟，R5 为 1 小时，R8 为 24 小时，其余为 10 分钟。每条结果保留实际窗口。</p>
+        <label class="field">验证场景<select name="scenario"><option value="failure_burst">失败集中 · 14:00</option><option value="rapid_pull">快速拉片 · 12:00</option><option value="token_shared">多环境 token · 13:00</option><option value="scope_violation">范围外访问 · 15:00</option><option value="missing_chain">授权步骤缺失 · 16:00</option><option value="client_tool">工具访问 · 18:00</option><option value="sustained_access">夜间访问 · 02:00</option><option value="normal">正常访问 · 自选窗口</option><option value="unknown_inputs">未知结果 · 17:00</option></select></label>
+        <label class="field">基准十分钟起点 · 北京时间<input name="windowStart" type="datetime-local" value="2026-10-23T14:00" min="2026-10-16T00:00" max="2026-10-23T23:50" step="60" required></label>
+        <div class="info-note">以基准起点后 10 分钟为共同结束时间，各规则向前回溯。窗口超出验证批次的规则单独显示数据不足。同范围、配置及证据版本重复检测复用结果。</div>
+        <div class="form-error" id="detect-error" role="alert" hidden></div>
+      </div>
+      <div class="dialog-actions"><button type="button" class="button secondary" data-close="detect-dialog">取消</button><button class="button primary" id="detect-submit" type="submit">开始检测 →</button></div>
+    </form>
+  </dialog>
+  <dialog id="detail-dialog" class="drawer" aria-label="告警详情"><div id="detail-content"></div></dialog>
+  <dialog id="results-dialog" class="results-dialog" aria-label="检测结果"><div id="results-content"></div></dialog>
+  <dialog id="report-compose-dialog" class="report-compose-dialog" aria-labelledby="report-compose-title"><div id="report-compose-content"></div></dialog>
+  <dialog id="report-action-dialog" aria-labelledby="report-action-title"><div id="report-action-content"></div></dialog>
+  <div id="toast" role="status" class="toast" hidden></div>
+</body>
+</html>

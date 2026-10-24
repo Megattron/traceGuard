@@ -1,0 +1,35 @@
+/* 事件回放：三条轨迹 + 时间游标，嵌入告警详情抽屉 */
+.replay{background:#fff;border:1px solid var(--border,#e6ebf1);border-radius:12px;padding:16px 18px;margin-top:14px}
+.replay-head{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.replay-head h4{font-size:13px;font-weight:600}
+.replay-head .sub{font-size:11px;color:#8490a1}
+.replay-controls{margin-left:auto;display:flex;align-items:center;gap:8px}
+.replay-time{font-family:ui-monospace,Consolas,monospace;font-size:12px;color:#223047;background:#eef4fd;border:1px solid #dbe7fb;border-radius:6px;padding:3px 8px;min-width:150px;text-align:center}
+.replay-chips{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0 8px}
+.replay-chip{font-size:11px;line-height:1.5;padding:2px 9px;border-radius:999px;background:#f0f4fa;border:1px solid #e2e9f3;color:#4a5872}
+.replay-chip.em{background:#fdf3e3;border-color:#f0dcb3;color:#8a5c13}
+.replay-chip.alert{background:#fbeceb;border-color:#f2cfcd;color:#a03d3c}
+.replay-chip.good{background:#e9f5f1;border-color:#c9e6dd;color:#1d6b58}
+.replay-canvas-wrap{position:relative;border:1px solid var(--border,#e6ebf1);border-radius:10px;background:#fbfcfe;overflow:hidden;touch-action:none;cursor:ew-resize;outline-offset:-2px}
+.replay-canvas-wrap:focus-visible{outline:3px solid #a9c6ff}
+.replay-canvas-wrap canvas{display:block;width:100%}
+.replay-tooltip{position:absolute;pointer-events:none;background:#223047;color:#fff;border-radius:6px;padding:5px 9px;font-size:11px;line-height:1.6;max-width:260px;z-index:5;box-shadow:0 4px 14px #22304733;white-space:nowrap}
+.replay-tooltip small{color:#b9c4d6}
+.replay-legend{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:11px;color:#8490a1;margin-top:8px}
+.replay-legend i{display:inline-block;width:8px;height:8px;border-radius:2px;margin-right:5px;vertical-align:-1px}
+.replay-readout{background:#eef4fd;border:1px solid #dbe7fb;border-radius:10px;padding:10px 12px;font-size:12px;line-height:1.8;margin-top:10px}
+.replay-readout b{font-family:ui-monospace,Consolas,monospace}
+.replay-readout .neg{color:#8490a1}
+.replay-side{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px}
+/* 抽屉固定 650px 宽，布局始终上下堆叠，避免画布被侧栏挤压 */
+@media (max-width:520px){.replay-side{grid-template-columns:1fr}}
+.replay-block{background:#f7f9fc;border:1px solid #e6ebf1;border-radius:10px;padding:10px 12px}
+.replay-block h5{font-size:11px;letter-spacing:.5px;margin:0 0 6px;color:#4a5872}
+.replay-block ul{margin:0;padding-left:16px;font-size:12px;line-height:1.7;color:#3a4664}
+.replay-block li{margin:2px 0}
+.replay-block.observed h5{color:#2563d9}.replay-block.risk h5{color:#ad7619}.replay-block.unknown h5{color:#8490a1}.replay-block.next h5{color:#24846d}
+.replay-basis{font-size:11px;color:#8490a1;margin-top:8px;line-height:1.7}
+.replay-note{font-size:11px;color:#8490a1;margin-top:8px;line-height:1.7;border-top:1px dashed #e2e9f3;padding-top:8px}
+.replay-loading,.replay-error{font-size:12px;color:#8490a1;padding:18px 4px}
+.replay-error{color:#a03d3c}
+.replay-error button{margin-left:10px}

@@ -1,0 +1,362 @@
+{
+  "meta": [
+    {
+      "name": "feature_group",
+      "type": "String"
+    },
+    {
+      "name": "run_id",
+      "type": "String"
+    },
+    {
+      "name": "user_id",
+      "type": "String"
+    },
+    {
+      "name": "scenario_id",
+      "type": "String"
+    },
+    {
+      "name": "subject_type",
+      "type": "String"
+    },
+    {
+      "name": "subject_id",
+      "type": "String"
+    },
+    {
+      "name": "token_ref",
+      "type": "String"
+    },
+    {
+      "name": "video_id",
+      "type": "String"
+    },
+    {
+      "name": "window_start",
+      "type": "DateTime64(3)"
+    },
+    {
+      "name": "window_end",
+      "type": "DateTime64(3)"
+    },
+    {
+      "name": "observed_event_count",
+      "type": "UInt64"
+    },
+    {
+      "name": "auth_pass_count_obs",
+      "type": "UInt64"
+    },
+    {
+      "name": "has_token_record",
+      "type": "Nullable(UInt8)"
+    },
+    {
+      "name": "has_manifest_record",
+      "type": "Nullable(UInt8)"
+    },
+    {
+      "name": "has_key_record",
+      "type": "Nullable(UInt8)"
+    },
+    {
+      "name": "auth_pass_segment_without_prior_key_obs",
+      "type": "UInt64"
+    },
+    {
+      "name": "missing_steps_eligible_count",
+      "type": "UInt64"
+    },
+    {
+      "name": "missing_steps_unknown_count",
+      "type": "UInt64"
+    },
+    {
+      "name": "chain_missing_required_step_count",
+      "type": "Nullable(UInt8)"
+    },
+    {
+      "name": "missing_steps_compute_status",
+      "type": "String"
+    },
+    {
+      "name": "missing_steps_reason_code",
+      "type": "String"
+    },
+    {
+      "name": "chain_order_violation_count",
+      "type": "Nullable(UInt64)"
+    },
+    {
+      "name": "chain_order_compute_status",
+      "type": "String"
+    },
+    {
+      "name": "chain_order_reason_code",
+      "type": "String"
+    },
+    {
+      "name": "token_to_manifest_mean_ms",
+      "type": "Nullable(Float64)"
+    },
+    {
+      "name": "manifest_to_key_mean_ms",
+      "type": "Nullable(Float64)"
+    },
+    {
+      "name": "key_to_ts_mean_ms",
+      "type": "Nullable(Float64)"
+    },
+    {
+      "name": "step_time_tie_count",
+      "type": "UInt64"
+    },
+    {
+      "name": "chain_evidence",
+      "type": "Array(Tuple(String, Nullable(UInt8), Nullable(UInt8), Nullable(UInt8), Nullable(Int64), Nullable(Int64), Nullable(Int64)))"
+    },
+    {
+      "name": "association_statuses",
+      "type": "Array(String)"
+    },
+    {
+      "name": "compute_status",
+      "type": "String"
+    },
+    {
+      "name": "reason_code",
+      "type": "String"
+    },
+    {
+      "name": "value_kind",
+      "type": "String"
+    }
+  ],
+  "data": [
+    {
+      "feature_group": "TG-F02",
+      "run_id": "tg_demo_cases_20261023_v1",
+      "user_id": "980107c0ab",
+      "scenario_id": "demo_download",
+      "subject_type": "SESSION",
+      "subject_id": "tg_demo_cases_20261023_v1:demo_download:1:session",
+      "token_ref": "tg_demo_cases_20261023_v1:demo_download:1:token",
+      "video_id": "sim_demo_course_01",
+      "window_start": "2026-10-23 12:00:00.000",
+      "window_end": "2026-10-23 12:10:00.000",
+      "observed_event_count": 720,
+      "auth_pass_count_obs": 720,
+      "has_token_record": 1,
+      "has_manifest_record": 1,
+      "has_key_record": 1,
+      "auth_pass_segment_without_prior_key_obs": 0,
+      "missing_steps_eligible_count": 720,
+      "missing_steps_unknown_count": 0,
+      "chain_missing_required_step_count": 0,
+      "missing_steps_compute_status": "AVAILABLE",
+      "missing_steps_reason_code": "",
+      "chain_order_violation_count": null,
+      "chain_order_compute_status": "UNAVAILABLE",
+      "chain_order_reason_code": "MISSING_PROTOCOL_ORDER_MODEL",
+      "token_to_manifest_mean_ms": 90,
+      "manifest_to_key_mean_ms": 200,
+      "key_to_ts_mean_ms": 36650,
+      "step_time_tie_count": 0,
+      "chain_evidence": [
+        [
+          "tg_demo_cases_20261023_v1:demo_download:000006",
+          1,
+          1,
+          1,
+          90,
+          200,
+          700
+        ],
+        [
+          "tg_demo_cases_20261023_v1:demo_download:000008",
+          1,
+          1,
+          1,
+          90,
+          200,
+          800
+        ],
+        [
+          "tg_demo_cases_20261023_v1:demo_download:000010",
+          1,
+          1,
+          1,
+          90,
+          200,
+          900
+        ],
+        [
+          "tg_demo_cases_20261023_v1:demo_download:000012",
+          1,
+          1,
+          1,
+          90,
+          200,
+          1000
+        ],
+        [
+          "tg_demo_cases_20261023_v1:demo_download:000014",
+          1,
+          1,
+          1,
+          90,
+          200,
+          1100
+        ],
+        [
+          "tg_demo_cases_20261023_v1:demo_download:000016",
+          1,
+          1,
+          1,
+          90,
+          200,
+          1200
+        ],
+        [
+          "tg_demo_cases_20261023_v1:demo_download:000018",
+          1,
+          1,
+          1,
+          90,
+          200,
+          1300
+        ],
+        [
+          "tg_demo_cases_20261023_v1:demo_download:000020",
+          1,
+          1,
+          1,
+          90,
+          200,
+          1400
+        ],
+        [
+          "tg_demo_cases_20261023_v1:demo_download:000022",
+          1,
+          1,
+          1,
+          90,
+          200,
+          1500
+        ],
+        [
+          "tg_demo_cases_20261023_v1:demo_download:000024",
+          1,
+          1,
+          1,
+          90,
+          200,
+          1600
+        ],
+        [
+          "tg_demo_cases_20261023_v1:demo_download:000026",
+          1,
+          1,
+          1,
+          90,
+          200,
+          1700
+        ],
+        [
+          "tg_demo_cases_20261023_v1:demo_download:000028",
+          1,
+          1,
+          1,
+          90,
+          200,
+          1800
+        ],
+        [
+          "tg_demo_cases_20261023_v1:demo_download:000030",
+          1,
+          1,
+          1,
+          90,
+          200,
+          1900
+        ],
+        [
+          "tg_demo_cases_20261023_v1:demo_download:000032",
+          1,
+          1,
+          1,
+          90,
+          200,
+          2000
+        ],
+        [
+          "tg_demo_cases_20261023_v1:demo_download:000034",
+          1,
+          1,
+          1,
+          90,
+          200,
+          2100
+        ],
+        [
+          "tg_demo_cases_20261023_v1:demo_download:000036",
+          1,
+          1,
+          1,
+          90,
+          200,
+          2200
+        ],
+        [
+          "tg_demo_cases_20261023_v1:demo_download:000038",
+          1,
+          1,
+          1,
+          90,
+          200,
+          2300
+        ],
+        [
+          "tg_demo_cases_20261023_v1:demo_download:000040",
+          1,
+          1,
+          1,
+          90,
+          200,
+          2400
+        ],
+        [
+          "tg_demo_cases_20261023_v1:demo_download:000042",
+          1,
+          1,
+          1,
+          90,
+          200,
+          2500
+        ],
+        [
+          "tg_demo_cases_20261023_v1:demo_download:000044",
+          1,
+          1,
+          1,
+          90,
+          200,
+          2600
+        ]
+      ],
+      "association_statuses": [
+        "CONFIRMED"
+      ],
+      "compute_status": "AVAILABLE",
+      "reason_code": "SEE_PER_FEATURE_STATUS",
+      "value_kind": "OBSERVED"
+    }
+  ],
+  "rows": 1,
+  "statistics": {
+    "elapsed": 6.371263986,
+    "rows_read": 2318491,
+    "bytes_read": 843134208
+  }
+}

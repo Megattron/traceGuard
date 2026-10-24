@@ -1,0 +1,41 @@
+{
+  "run_id": "tg_demo_cases_20261023_v1",
+  "files": {
+    "media_segments.demo.jsonl.gz": {
+      "sha256": "7a1557ba7f5d3a461aa2efedaa02fdc293684193829010ebfadfca9dc131f855",
+      "batches": 2,
+      "complete": true,
+      "rows": 6520
+    },
+    "token_snapshots.demo.jsonl.gz": {
+      "sha256": "2bacff707e7fe3eb0ea67073795103fcf8cdeb9eddff082bb049d85b5d949824",
+      "batches": 1,
+      "complete": true,
+      "rows": 10
+    },
+    "source_coverage.demo.jsonl.gz": {
+      "sha256": "75113eb3c966c7d13edaf2dc4a995a8d4d79c7f0c23ee6174bdbe00059833576",
+      "batches": 1,
+      "complete": true,
+      "rows": 33
+    },
+    "business_config.demo.jsonl.gz": {
+      "sha256": "b4b05150c7515706fa998d6ceff2b9d405a72d4612e1d057c027b82a3a24aa7a",
+      "batches": 1,
+      "complete": true,
+      "rows": 3
+    },
+    "ip_info.demo.jsonl.gz": {
+      "sha256": "6ea30281a026f0c88a82208a4fdd915e7eea609f8a53d4499e37eb8507b83f96",
+      "batches": 1,
+      "complete": true,
+      "rows": 2
+    },
+    "events.demo.jsonl.gz": {
+      "sha256": "52296c3859aa12b1d914711f02be2b27a47e20128abe97827cc257c0e306b8e0",
+      "batches": 3,
+      "complete": true,
+      "rows": 14018
+    }
+  }
+}

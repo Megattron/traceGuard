@@ -1,0 +1,20 @@
+{
+  "run_id": "tg_demo_cases_20261023_v1",
+  "status": "PASS",
+  "before": {
+    "events": 0,
+    "media_segments": 0,
+    "token_snapshots": 0,
+    "source_coverage": 0,
+    "business_config": 0,
+    "ip_info": 0
+  },
+  "after": {
+    "events": 14018,
+    "media_segments": 6520,
+    "token_snapshots": 10,
+    "source_coverage": 33,
+    "business_config": 3,
+    "ip_info": 2
+  }
+}

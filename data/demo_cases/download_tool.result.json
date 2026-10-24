@@ -1,0 +1,325 @@
+{
+  "meta": [
+    {
+      "name": "feature_group",
+      "type": "String"
+    },
+    {
+      "name": "run_id",
+      "type": "String"
+    },
+    {
+      "name": "user_id",
+      "type": "String"
+    },
+    {
+      "name": "scenario_id",
+      "type": "String"
+    },
+    {
+      "name": "subject_type",
+      "type": "String"
+    },
+    {
+      "name": "subject_id",
+      "type": "Nullable(String)"
+    },
+    {
+      "name": "video_id",
+      "type": "String"
+    },
+    {
+      "name": "token_ref",
+      "type": "String"
+    },
+    {
+      "name": "session_ref",
+      "type": "Nullable(String)"
+    },
+    {
+      "name": "window_start",
+      "type": "DateTime64(3)"
+    },
+    {
+      "name": "window_end",
+      "type": "DateTime64(3)"
+    },
+    {
+      "name": "observed_event_count",
+      "type": "UInt64"
+    },
+    {
+      "name": "eligible_count",
+      "type": "UInt64"
+    },
+    {
+      "name": "excluded_server_event_count",
+      "type": "UInt64"
+    },
+    {
+      "name": "unknown_ua_count",
+      "type": "UInt64"
+    },
+    {
+      "name": "tool_event_count_obs",
+      "type": "UInt64"
+    },
+    {
+      "name": "tool_request_stage_count_obs",
+      "type": "UInt64"
+    },
+    {
+      "name": "known_legitimate_tool_event_count",
+      "type": "UInt64"
+    },
+    {
+      "name": "tool_signature_codes",
+      "type": "Array(String)"
+    },
+    {
+      "name": "ua_parser_versions",
+      "type": "Array(String)"
+    },
+    {
+      "name": "tool_event_evidence",
+      "type": "Array(Tuple(String, String, Nullable(String), String, UInt8))"
+    },
+    {
+      "name": "compute_status",
+      "type": "String"
+    },
+    {
+      "name": "reason_code",
+      "type": "String"
+    },
+    {
+      "name": "value_kind",
+      "type": "String"
+    },
+    {
+      "name": "identity_bases",
+      "type": "Array(String)"
+    },
+    {
+      "name": "association_statuses",
+      "type": "Array(String)"
+    }
+  ],
+  "data": [
+    {
+      "feature_group": "TG-F12",
+      "run_id": "tg_demo_cases_20261023_v1",
+      "user_id": "980107c0ab",
+      "scenario_id": "demo_download",
+      "subject_type": "CREDENTIAL_VIEWER",
+      "subject_id": "sim_demo_download_viewer",
+      "video_id": "sim_demo_course_01",
+      "token_ref": "tg_demo_cases_20261023_v1:demo_download:1:token",
+      "session_ref": "tg_demo_cases_20261023_v1:demo_download:1:session",
+      "window_start": "2026-10-23 12:00:00.000",
+      "window_end": "2026-10-23 12:10:00.000",
+      "observed_event_count": 1,
+      "eligible_count": 0,
+      "excluded_server_event_count": 1,
+      "unknown_ua_count": 0,
+      "tool_event_count_obs": 0,
+      "tool_request_stage_count_obs": 0,
+      "known_legitimate_tool_event_count": 0,
+      "tool_signature_codes": [],
+      "ua_parser_versions": [],
+      "tool_event_evidence": [],
+      "compute_status": "UNAVAILABLE",
+      "reason_code": "NO_CLIENT_EVENTS",
+      "value_kind": "OBSERVED",
+      "identity_bases": [
+        "CUSTOMER_SERVER"
+      ],
+      "association_statuses": [
+        "CONFIRMED"
+      ]
+    },
+    {
+      "feature_group": "TG-F12",
+      "run_id": "tg_demo_cases_20261023_v1",
+      "user_id": "980107c0ab",
+      "scenario_id": "demo_download",
+      "subject_type": "VIEWER",
+      "subject_id": "sim_demo_download_viewer",
+      "video_id": "sim_demo_course_01",
+      "token_ref": "tg_demo_cases_20261023_v1:demo_download:1:token",
+      "session_ref": "tg_demo_cases_20261023_v1:demo_download:1:session",
+      "window_start": "2026-10-23 12:00:00.000",
+      "window_end": "2026-10-23 12:10:00.000",
+      "observed_event_count": 1444,
+      "eligible_count": 1443,
+      "excluded_server_event_count": 1,
+      "unknown_ua_count": 0,
+      "tool_event_count_obs": 1443,
+      "tool_request_stage_count_obs": 5,
+      "known_legitimate_tool_event_count": 0,
+      "tool_signature_codes": [
+        "FFMPEG"
+      ],
+      "ua_parser_versions": [
+        "tg_ua_1"
+      ],
+      "tool_event_evidence": [
+        [
+          "tg_demo_cases_20261023_v1:demo_download:000003",
+          "MANIFEST_REQUEST",
+          "ffmpeg/7.0",
+          "FFMPEG",
+          0
+        ],
+        [
+          "tg_demo_cases_20261023_v1:demo_download:000004",
+          "HLS_KEY_VALIDATE",
+          "ffmpeg/7.0",
+          "FFMPEG",
+          0
+        ],
+        [
+          "tg_demo_cases_20261023_v1:demo_download:000005",
+          "KEY_RESPONSE",
+          "ffmpeg/7.0",
+          "FFMPEG",
+          0
+        ],
+        [
+          "tg_demo_cases_20261023_v1:demo_download:000006",
+          "TS_VALIDATE",
+          "ffmpeg/7.0",
+          "FFMPEG",
+          0
+        ],
+        [
+          "tg_demo_cases_20261023_v1:demo_download:000007",
+          "CDN_MEDIA_ACCESS",
+          "ffmpeg/7.0",
+          "FFMPEG",
+          0
+        ],
+        [
+          "tg_demo_cases_20261023_v1:demo_download:000008",
+          "TS_VALIDATE",
+          "ffmpeg/7.0",
+          "FFMPEG",
+          0
+        ],
+        [
+          "tg_demo_cases_20261023_v1:demo_download:000009",
+          "CDN_MEDIA_ACCESS",
+          "ffmpeg/7.0",
+          "FFMPEG",
+          0
+        ],
+        [
+          "tg_demo_cases_20261023_v1:demo_download:000010",
+          "TS_VALIDATE",
+          "ffmpeg/7.0",
+          "FFMPEG",
+          0
+        ],
+        [
+          "tg_demo_cases_20261023_v1:demo_download:000011",
+          "CDN_MEDIA_ACCESS",
+          "ffmpeg/7.0",
+          "FFMPEG",
+          0
+        ],
+        [
+          "tg_demo_cases_20261023_v1:demo_download:000012",
+          "TS_VALIDATE",
+          "ffmpeg/7.0",
+          "FFMPEG",
+          0
+        ],
+        [
+          "tg_demo_cases_20261023_v1:demo_download:000013",
+          "CDN_MEDIA_ACCESS",
+          "ffmpeg/7.0",
+          "FFMPEG",
+          0
+        ],
+        [
+          "tg_demo_cases_20261023_v1:demo_download:000014",
+          "TS_VALIDATE",
+          "ffmpeg/7.0",
+          "FFMPEG",
+          0
+        ],
+        [
+          "tg_demo_cases_20261023_v1:demo_download:000015",
+          "CDN_MEDIA_ACCESS",
+          "ffmpeg/7.0",
+          "FFMPEG",
+          0
+        ],
+        [
+          "tg_demo_cases_20261023_v1:demo_download:000016",
+          "TS_VALIDATE",
+          "ffmpeg/7.0",
+          "FFMPEG",
+          0
+        ],
+        [
+          "tg_demo_cases_20261023_v1:demo_download:000017",
+          "CDN_MEDIA_ACCESS",
+          "ffmpeg/7.0",
+          "FFMPEG",
+          0
+        ],
+        [
+          "tg_demo_cases_20261023_v1:demo_download:000018",
+          "TS_VALIDATE",
+          "ffmpeg/7.0",
+          "FFMPEG",
+          0
+        ],
+        [
+          "tg_demo_cases_20261023_v1:demo_download:000019",
+          "CDN_MEDIA_ACCESS",
+          "ffmpeg/7.0",
+          "FFMPEG",
+          0
+        ],
+        [
+          "tg_demo_cases_20261023_v1:demo_download:000020",
+          "TS_VALIDATE",
+          "ffmpeg/7.0",
+          "FFMPEG",
+          0
+        ],
+        [
+          "tg_demo_cases_20261023_v1:demo_download:000021",
+          "CDN_MEDIA_ACCESS",
+          "ffmpeg/7.0",
+          "FFMPEG",
+          0
+        ],
+        [
+          "tg_demo_cases_20261023_v1:demo_download:000022",
+          "TS_VALIDATE",
+          "ffmpeg/7.0",
+          "FFMPEG",
+          0
+        ]
+      ],
+      "compute_status": "AVAILABLE",
+      "reason_code": "",
+      "value_kind": "OBSERVED",
+      "identity_bases": [
+        "AUTHENTICATED_VIEWER"
+      ],
+      "association_statuses": [
+        "CONFIRMED"
+      ]
+    }
+  ],
+  "rows": 2,
+  "statistics": {
+    "elapsed": 3.805718508,
+    "rows_read": 1159224,
+    "bytes_read": 599222011
+  }
+}

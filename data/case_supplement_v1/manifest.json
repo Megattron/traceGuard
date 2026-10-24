@@ -1,0 +1,68 @@
+{
+  "run_id": "tg_980107c0ab_20261016_20261023_v1",
+  "user_id": "980107c0ab",
+  "timezone": "Asia/Shanghai",
+  "dataset_kind": "SYNTHETIC",
+  "parts": [
+    {
+      "table": "events",
+      "file": "events.demo.jsonl.gz",
+      "rows": 14018,
+      "sha256": "034f0d19cd32a9b363809481853e2e0676b0d0c52cbc5663df7287c3ca7343d4"
+    },
+    {
+      "table": "media_segments",
+      "file": "media_segments.demo.jsonl.gz",
+      "rows": 6520,
+      "sha256": "a7c7775e4d954cb54c3b7ec9c17078cf7ab1443f40a048e9ba78a2cbb1d8f361"
+    },
+    {
+      "table": "token_snapshots",
+      "file": "token_snapshots.demo.jsonl.gz",
+      "rows": 10,
+      "sha256": "fd9d1e89b6d43a1dfedfd0b05fca6b61732cf07fc4959e7abfe9cb3b5986db8e"
+    }
+  ],
+  "courses": [
+    {
+      "video_id": "sim_course_01",
+      "title": "合成培训课程 01",
+      "seconds": 7200
+    },
+    {
+      "video_id": "sim_course_02",
+      "title": "合成培训课程 02",
+      "seconds": 7200
+    },
+    {
+      "video_id": "sim_course_03",
+      "title": "合成培训课程 03",
+      "seconds": 7200
+    },
+    {
+      "video_id": "sim_course_04",
+      "title": "合成培训课程 04",
+      "seconds": 7200
+    },
+    {
+      "video_id": "sim_course_05",
+      "title": "合成培训课程 05",
+      "seconds": 7200
+    },
+    {
+      "video_id": "sim_course_06",
+      "title": "合成培训课程 06",
+      "seconds": 7200
+    },
+    {
+      "video_id": "sim_course_07",
+      "title": "合成培训课程 07",
+      "seconds": 7200
+    },
+    {
+      "video_id": "sim_course_08",
+      "title": "合成培训课程 08",
+      "seconds": 7200
+    }
+  ]
+}

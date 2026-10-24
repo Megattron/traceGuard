@@ -1,0 +1,149 @@
+{
+  "meta": [
+    {
+      "name": "run_id",
+      "type": "String"
+    },
+    {
+      "name": "user_id",
+      "type": "String"
+    },
+    {
+      "name": "scenario_id",
+      "type": "String"
+    },
+    {
+      "name": "subject_type",
+      "type": "String"
+    },
+    {
+      "name": "subject_id",
+      "type": "Nullable(String)"
+    },
+    {
+      "name": "window_start",
+      "type": "DateTime64(3)"
+    },
+    {
+      "name": "window_end",
+      "type": "DateTime64(3)"
+    },
+    {
+      "name": "compute_status",
+      "type": "String"
+    },
+    {
+      "name": "reason_code",
+      "type": "String"
+    },
+    {
+      "name": "value_kind",
+      "type": "String"
+    },
+    {
+      "name": "observed_evidence_count",
+      "type": "UInt64"
+    },
+    {
+      "name": "ts_observed_event_count",
+      "type": "UInt64"
+    },
+    {
+      "name": "cdn_observed_event_count",
+      "type": "UInt64"
+    },
+    {
+      "name": "window_active_video_count_obs",
+      "type": "UInt64"
+    },
+    {
+      "name": "request_active_interval_overlap_proxy",
+      "type": "Nullable(UInt32)"
+    },
+    {
+      "name": "request_active_overlap_seconds_proxy",
+      "type": "Nullable(Float64)"
+    },
+    {
+      "name": "request_activity_ttl_seconds",
+      "type": "Nullable(UInt32)"
+    },
+    {
+      "name": "request_overlap_compute_status",
+      "type": "String"
+    },
+    {
+      "name": "request_overlap_reason_code",
+      "type": "String"
+    },
+    {
+      "name": "trusted_state_count",
+      "type": "UInt64"
+    },
+    {
+      "name": "state_expiry_unknown_count",
+      "type": "UInt64"
+    },
+    {
+      "name": "state_order_ambiguous_count",
+      "type": "Int64"
+    },
+    {
+      "name": "playback_state_concurrent_video_count",
+      "type": "Nullable(UInt32)"
+    },
+    {
+      "name": "playback_state_overlap_seconds",
+      "type": "Nullable(Float64)"
+    },
+    {
+      "name": "playback_state_compute_status",
+      "type": "String"
+    },
+    {
+      "name": "playback_state_reason_code",
+      "type": "String"
+    },
+    {
+      "name": "playback_state_value_kind",
+      "type": "String"
+    }
+  ],
+  "data": [
+    {
+      "run_id": "tg_demo_cases_20261023_v1",
+      "user_id": "980107c0ab",
+      "scenario_id": "demo_sustained",
+      "subject_type": "VIEWER",
+      "subject_id": "sim_demo_sustained_viewer",
+      "window_start": "2026-10-23 00:00:00.000",
+      "window_end": "2026-10-24 00:00:00.000",
+      "compute_status": "AVAILABLE",
+      "reason_code": "",
+      "value_kind": "LOWER_BOUND",
+      "observed_evidence_count": 11520,
+      "ts_observed_event_count": 5760,
+      "cdn_observed_event_count": 5760,
+      "window_active_video_count_obs": 8,
+      "request_active_interval_overlap_proxy": null,
+      "request_active_overlap_seconds_proxy": null,
+      "request_activity_ttl_seconds": null,
+      "request_overlap_compute_status": "UNAVAILABLE",
+      "request_overlap_reason_code": "UNCALIBRATED_REQUEST_ACTIVITY_MODEL_OR_LOOKBACK_COVERAGE",
+      "trusted_state_count": 968,
+      "state_expiry_unknown_count": 0,
+      "state_order_ambiguous_count": 0,
+      "playback_state_concurrent_video_count": 1,
+      "playback_state_overlap_seconds": 0,
+      "playback_state_compute_status": "AVAILABLE",
+      "playback_state_reason_code": "",
+      "playback_state_value_kind": "OBSERVED_PLAYER_STATE"
+    }
+  ],
+  "rows": 1,
+  "statistics": {
+    "elapsed": 21.973111639,
+    "rows_read": 8114667,
+    "bytes_read": 2931265386
+  }
+}

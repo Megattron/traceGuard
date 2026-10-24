@@ -1,0 +1,10 @@
+.DS_Store
+node_modules/
+.env
+.env.local
+.runtime/
+coverage/
+*.log
+*.tsbuildinfo
+__pycache__/
+*.pyc

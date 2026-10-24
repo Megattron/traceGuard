@@ -1,0 +1,17 @@
+[
+  {
+    "tenantId": "980107c0ab",
+    "version": "BP-980107c0ab-v2",
+    "effectiveFrom": "2026-10-23T00:00:00+08:00",
+    "downloadAllowed": false,
+    "prefetchAllowed": false,
+    "accountSharingAllowed": false,
+    "keyCacheTtlSeconds": 300,
+    "renewal": {
+      "allowed": true,
+      "initiatedBy": "same_viewer",
+      "preserveScope": true,
+      "snapshotRequired": true
+    }
+  }
+]

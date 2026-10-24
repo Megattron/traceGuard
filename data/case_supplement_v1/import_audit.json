@@ -1,0 +1,14 @@
+{
+  "run_id": "tg_980107c0ab_20261016_20261023_v1",
+  "status": "PASS",
+  "before": {
+    "events": 0,
+    "media_segments": 0,
+    "token_snapshots": 0
+  },
+  "after": {
+    "events": 14018,
+    "media_segments": 6520,
+    "token_snapshots": 10
+  }
+}

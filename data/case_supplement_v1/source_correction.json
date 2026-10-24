@@ -1,0 +1,12 @@
+{
+  "scope": "tg_980107c0ab_20261016_20261023_v1:case_supplement_v1:",
+  "operation": "stable-key INSERT correction of own synthetic events only",
+  "read_back": [
+    {
+      "source": "SIMULATOR",
+      "n": 14018
+    }
+  ],
+  "new_sha256": "034f0d19cd32a9b363809481853e2e0676b0d0c52cbc5663df7287c3ca7343d4",
+  "previous_manifest": "manifest.json.before-source-correction"
+}
